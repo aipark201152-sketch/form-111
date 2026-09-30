@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture & Folder Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="page-title">VIP Registration</h1>
+
+    <p class="info-text">Please complete all required fields.</p>
+    <p class="info-text">Double check your email before submitting.</p>
+
+<form action="#" method="POST" class="form-card">
+    <h2>Event Sign-Up</h2>
+
+  
+    <div class="form-group">
+        <!-- 'for' value MUST match 'id' value below -->
+        <label for="userEmail">Email Address:</label>
+        <input type="email" id="userEmail" name="useEmail" placeholder="Your Name Here!" required>
+    </textarea>
+    </div>
+
+    <div class="form-group">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="e.g., Jane Doe" required>
+</div>
+
+<div class="form-group">
+    <label for="userDOB">Date of Birth:</label>
+    <input type="date" id="userDOB" name="userDOB" required>
+</div>
+
+<div class="form-group">
+    <label for="userNotes">Special Requests:</label>
+    <textarea id="userNotes"
+    name="userNotes"
+    rows="3"
+    placeholder="Special Requests"></textarea>
+  
+</div>
+
+<div class="form-group">
+    <label>Ticket Type:</label>
+    <div class="option-group"></div>
+     <label>
+        <input type="radio" name="ticketType" value="vip">VIP
+        <input type="radio" name="ticketType" value="standard">Standard
+    </label>
+</div>
+
+<div class="form-group">
+      <label>Dietary Preferences:</label>
+  <div class= "option group">
+        <input type="checkbox" name="dietary" value="vegetarian"> Vegetarian
+      </label>
+    </div>
+
+<div class="form-group">
+    <label>
+        <input type="checkbox" name="terms" value="agree" required>
+        I agree to the terms and conditions
+    </label>
+</div>
+<div class="form-group">
+    <label for="shirtSize">Shirt Size:</label>
+    <select id="shirtSize" name="shirtSize" required>
+        <option value="" disabled selected>Select your size...</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+</div>
+
+<button type="submit" class="submit-btn">Submit Registration</button>
+</form>
+</body>
+</html>
